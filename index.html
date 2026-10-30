@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0b0a14">
+<title>an owl post for you 🦉</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦉%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&display=swap">
+<style>
+:root{color-scheme:dark;--night:#0b0a14;--red:#740001;--gold:#d3a625;--gold2:#eeba30;--parch:#f1e3c3;--parch2:#dcc594;--ink:#3a2a1a;--green:#2c5a3b;--disp:"Cinzel Decorative",Georgia,serif;--cap:Cinzel,Georgia,serif;--body:"IM Fell English","Palatino Linotype",Georgia,serif}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;min-height:100svh;padding:max(22px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(30px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));font-family:var(--body);color:var(--parch);background:radial-gradient(ellipse at 50% -10%,#232a63,transparent 62%),radial-gradient(ellipse at 50% 115%,#4a0b16,transparent 55%),var(--night);overflow-x:hidden}
+#sky,#candles{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.5;animation:tw var(--d) var(--l) infinite}
+@keyframes tw{50%{opacity:.05}}
+.candle{position:absolute;left:var(--x);top:var(--y);width:9px;height:32px;border-radius:2px;background:linear-gradient(90deg,#d8cbae,#fff6dc,#cbbd9c);animation:bob var(--d) ease-in-out infinite alternate}
+.candle::before{content:"";position:absolute;left:50%;top:-15px;width:9px;height:16px;margin-left:-4.5px;border-radius:50% 50% 50% 50%/65% 65% 35% 35%;background:radial-gradient(#fff 15%,var(--gold2) 45%,#e8731a);box-shadow:0 0 18px 8px #eeba3055;animation:fl .2s infinite alternate}
+@keyframes bob{to{transform:translateY(-14px)}}
+@keyframes fl{to{transform:scale(.88,1.1)}}
+main{position:relative;z-index:1;max-width:700px;margin:0 auto;text-align:center}
+.orn{margin:18px 0 8px;color:var(--gold);letter-spacing:.6em;opacity:.8}
+h1{margin:0;font:700 clamp(2.1rem,9vw,3.6rem)/1.1 var(--disp);background:linear-gradient(#fff3c4,var(--gold2) 45%,#a8761a);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 10px #740001aa)}
+.sub{margin:14px 0 0;font-size:1.1rem;line-height:1.6;opacity:.88}
+.seal{display:block;margin:28px auto 12px;width:94px;height:94px;border:0;border-radius:50%;cursor:pointer;font-size:2rem;color:#f6d79b;background:radial-gradient(circle at 35% 30%,#c32a32,var(--red) 62%,#360004);box-shadow:0 8px 20px #000a,inset 0 0 0 5px #8a1118,inset 0 0 0 7px #e0545a44,0 0 34px #740001cc;transition:transform .25s;-webkit-tap-highlight-color:transparent}
+.seal:hover{transform:scale(1.07) rotate(-5deg)}
+.seal:focus-visible,nav a:focus-visible,.pager button:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
+.cap{margin:0;font:500 .9rem var(--cap);letter-spacing:.05em;opacity:.75}
+nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:10px;margin:30px 0 6px}
+nav a{display:block;padding:14px 8px;color:var(--parch);text-decoration:none;border:1px solid #d3a62566;border-radius:6px;background:#0b0a14aa;transition:background .25s,border-color .25s}
+nav a:hover,nav a.on{border-color:var(--gold2);background:#74000166}
+nav b{display:block;font-size:1.5rem}
+nav span{font:700 .9rem var(--cap);color:var(--gold2);letter-spacing:.03em}
+nav small{display:block;margin-top:3px;font-size:.82rem;opacity:.7}
+.head{margin:30px 0 0;font:700 1.2rem var(--disp);color:var(--gold2)}
+.head small{display:block;margin-top:6px;font:500 .9rem var(--cap);letter-spacing:.05em;opacity:.7}
+.sheet{position:relative;margin:18px 0;padding:34px clamp(20px,6vw,44px);text-align:left;color:var(--ink);border-radius:3px;background:radial-gradient(ellipse at 50% 0,#fff7df,transparent 70%),linear-gradient(var(--parch),var(--parch2));box-shadow:0 22px 60px #000b,inset 0 0 60px #a8814144;animation:in .7s both}
+.sheet::before{content:"";position:absolute;inset:8px;border:1px solid #8c6a2f55;pointer-events:none}
+@keyframes in{from{opacity:0}}
+.date{font:500 .9rem var(--cap);letter-spacing:.04em;color:#7a5a22}
+.sheet h2{display:flex;justify-content:space-between;gap:12px;margin:.35em 0 .5em;font:700 1.45rem/1.25 var(--cap);color:var(--red)}
+.meta{margin:-.2em 0 .8em;font-style:italic;color:#6b4e16}
+.meta a{color:var(--red)}
+.body{font-size:1.2rem;line-height:1.75}
+.letter .body{color:var(--green)}
+.body p,.body div,.body blockquote,.body h3{margin:.7em 0;unicode-bidi:plaintext}
+.body h3{font:700 1.2rem var(--cap);color:var(--red)}
+.body blockquote{padding-left:14px;border-left:3px solid var(--gold);font-style:italic}
+.body img{display:block;max-width:100%;height:auto;margin:1em auto;border:6px solid #c59a3a;outline:1px solid #6b4e16;box-shadow:0 8px 18px #0005;transform:rotate(-.8deg)}
+.hadith .body{font-family:Amiri,var(--body);font-size:1.35rem}
+.stars{color:#b8861b;font-size:1.1rem;letter-spacing:.1em;white-space:nowrap}
+.mirror{counter-reset:r;margin:20px 0;padding:40px 18px 14px;border:10px double var(--gold);border-radius:999px 999px 14px 14px/160px 160px 14px 14px;background:radial-gradient(ellipse at 50% 0,#2e3a86,#0c1030 70%);box-shadow:0 0 40px #d3a62544,inset 0 0 40px #000}
+.mirror .sheet{counter-increment:r;margin:0;padding:18px 8px;text-align:center;color:var(--parch);background:none;box-shadow:none;border-bottom:1px solid #d3a62533;animation:none}
+.mirror .sheet::before{content:"Reason № " counter(r);position:static;display:block;margin-bottom:6px;border:0;font:500 .9rem var(--cap);letter-spacing:.05em;color:var(--gold2)}
+.pager{display:flex;align-items:center;justify-content:center;gap:16px;font:500 .9rem var(--cap)}
+.pager button{padding:9px 14px;font:700 .85rem var(--cap);color:var(--gold2);background:none;border:1px solid #d3a62588;border-radius:4px;cursor:pointer}
+.pager button:disabled{opacity:.3;cursor:default}
+.hint{margin:34px 0;font-style:italic;opacity:.75}
+.foot{margin:34px 0 0;font-size:.9rem;opacity:.7}
+.sp{position:fixed;z-index:9;pointer-events:none;animation:sp .9s ease-out forwards}
+@keyframes sp{to{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.3) rotate(90deg)}}
+.owl{position:fixed;z-index:9;left:-80px;top:30%;font-size:2.4rem;pointer-events:none;animation:fly 2.2s ease-in-out forwards}
+@keyframes fly{to{left:105%;top:8%;transform:rotate(-12deg)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="sky" aria-hidden="true"></div><div id="candles" aria-hidden="true"></div>
+<main>
+  <header id="home">
+    <div class="orn" aria-hidden="true">✦ ⚡ ✦</div>
+    <h1 id="hi"></h1>
+    <p class="sub" id="sub"></p>
+    <button class="seal" id="seal" type="button" aria-label="open today's letter">♥</button>
+    <p class="cap">break the seal to open today's letter</p>
+  </header>
+  <nav id="nav"></nav>
+  <section id="view" aria-live="polite"></section>
+  <p class="foot">made with love ⸜(｡˃ ᵕ ˂ )⸝♡</p>
+</main>
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<script>
+const $=s=>document.querySelector(s),C=window.CFG||{},T=new Date().toLocaleDateString('en-CA');
+const sb=C.url&&window.supabase?supabase.createClient(C.url,C.key):null;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clean=h=>window.DOMPurify?DOMPurify.sanitize(h||''):'';
+const fmt=d=>new Date(d+'T00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+const calm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// the five sections (d = "of the day": shows today's entry, with older ones behind a pager)
+const S={
+  letter:{i:'✉️',n:'Owl Post',s:'Letter of the day',d:1},
+  song:{i:'🎶',n:'Wizarding Wireless',s:'Song of the day',d:1},
+  hadith:{i:'📜',n:'The Library',s:'Hadith of the day',d:1},
+  reason:{i:'🪞',n:'Mirror of Erised',s:'Reasons why I love you'},
+  place:{i:'🗺️',n:"Marauder's Map",s:"Places we've been"}
+};
+
+// sample data, only used until config.js is filled in
+const DEMO=[
+  {kind:'letter',day:T,title:'Dear you,',body:'<p>This is a sample letter. Once Supabase is connected, your real stories appear here, with photos wherever you put them.</p>'},
+  {kind:'song',day:T,title:'Sample song',meta:{artist:'Some artist',link:''},body:'<p>Why this song reminds me of you.</p>'},
+  {kind:'hadith',day:T,title:'',meta:{source:'Source and number'},body:'<p>Arabic text and translation go here.</p>'},
+  {kind:'reason',day:T,body:'<p>The way you laugh at your own jokes first.</p>'},
+  {kind:'reason',day:T,body:'<p>You always remember the small things.</p>'},
+  {kind:'place',day:T,title:'Our favourite café',meta:{rating:5},body:'<p>Best hot chocolate, best company.</p>'}
+];
+
+async function load(k){
+  if(!sb)return DEMO.filter(e=>e.kind===k);
+  const{data,error}=await sb.from('entries').select('*').eq('kind',k).order('day',{ascending:false}).order('created_at',{ascending:false});
+  return error?[]:data;
+}
+
+const stars=n=>{n=Math.max(0,Math.min(5,+n||0));return'★'.repeat(n)+'☆'.repeat(5-n)};
+const lnk=l=>/^https?:\/\//i.test(l||'')?` <a href="${esc(l)}" target="_blank" rel="noopener">listen ♪</a>`:'';
+
+function card(k,e){
+  const m=e.meta||{},b=`<div class="body">${clean(e.body)}</div>`;
+  if(k==='reason')return`<article class="sheet reason">${b}</article>`;
+  let h='';
+  if(e.title||k==='place')h=`<h2><span>${esc(e.title)}</span>${k==='place'?`<span class="stars">${stars(m.rating)}</span>`:''}</h2>`;
+  if(k==='song')h+=`<p class="meta">${esc(m.artist)}${lnk(m.link)}</p>`;
+  if(k==='hadith'&&m.source)h+=`<p class="meta">${esc(m.source)}</p>`;
+  return`<article class="sheet ${k}"><div class="date">${fmt(e.day)}</div>${h}${b}</article>`;
+}
+
+async function route(){
+  scrollTo(0,0);
+  const k=location.hash.slice(1),s=S[k],v=$('#view');
+  $('#home').hidden=!!s;
+  document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.dataset.k===k));
+  v.innerHTML='';
+  if(!s)return;
+  v.innerHTML='<p class="hint">🦉 the owl is fetching it…</p>';
+  let list=await load(k);
+  if(s.d)list=list.filter(e=>e.day<=T);   // future-dated entries stay hidden until their day
+  if(k==='reason')list.reverse();           // oldest first, so reason numbers never change
+  const head=`<h3 class="head">${s.i} ${s.n}<small>${s.s}</small></h3>`;
+  if(!list.length){v.innerHTML=head+'<p class="hint">Nothing here yet. The owl is still on its way 🦉</p>';return}
+  if(!s.d){
+    const cards=list.map(e=>card(k,e)).join('');
+    v.innerHTML=head+(k==='reason'?`<div class="mirror">${cards}</div>`:cards);
+    return;
+  }
+  let i=0;
+  const draw=()=>{
+    v.innerHTML=head+card(k,list[i])+`<div class="pager"><button id="pv" type="button" ${i>=list.length-1?'disabled':''}>‹ older</button><span>${i+1} / ${list.length}</span><button id="nx" type="button" ${i?'':'disabled'}>newer ›</button></div>`;
+    $('#pv').onclick=()=>{i++;draw()};
+    $('#nx').onclick=()=>{i--;draw()};
+  };
+  draw();
+}
+
+function burst(x,y){
+  if(calm)return;
+  for(let i=0;i<14;i++){
+    const p=document.createElement('span'),a=Math.random()*6.28,d=50+Math.random()*90;
+    p.className='sp';p.textContent=['✨','⚡','💛','🕯️','✦'][i%5];
+    p.style.cssText=`left:${x}px;top:${y}px;--dx:${Math.cos(a)*d}px;--dy:${Math.sin(a)*d-20}px`;
+    p.onanimationend=()=>p.remove();document.body.append(p);
+  }
+}
+
+$('#seal').onclick=e=>{
+  const r=e.currentTarget.getBoundingClientRect();
+  burst(r.left+r.width/2,r.top+r.height/2);
+  if(!calm){const o=document.createElement('div');o.className='owl';o.textContent='🦉';document.body.append(o);setTimeout(()=>o.remove(),2300)}
+  setTimeout(()=>{location.hash='letter'},calm?0:650);
+};
+
+// greeting + header
+$('#hi').textContent='Happy '+new Date().toLocaleDateString('en-US',{weekday:'long'})+'!';
+$('#sub').innerHTML=fmt(T)+'<br>'+(C.name?'for '+esc(C.name):'to one of my favorite person')+' 💖';
+if(C.name)document.title='to: '+C.name+' 🦉';
+if(!sb)$('.foot').append(' (sample data: fill in config.js)');
+$('#nav').innerHTML=Object.entries(S).map(([k,s])=>`<a href="#${k}" data-k="${k}"><b>${s.i}</b><span>${s.n}</span><small>${s.s}</small></a>`).join('');
+
+// atmosphere: twinkling stars + floating candles
+for(let i=0;i<60;i++){const s=document.createElement('i');s.className='star';s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*4}s;--l:-${Math.random()*5}s`;$('#sky').append(s)}
+for(let i=0;i<8;i++){const c=document.createElement('i');c.className='candle';c.style.cssText=`--x:${5+i*12+Math.random()*5}%;--y:${3+Math.random()*20}%;--d:${3+Math.random()*3}s`;$('#candles').append(c)}
+
+addEventListener('hashchange',route);
+route();
+</script>
+</body>
+</html>
